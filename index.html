@@ -9,7 +9,10 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
 </head>
 <body style="background-color: rgb(59, 59, 59);">
-    <div class="navbar"><div class="name">Rohit Balji R</div> <div class="ab"> <a href="#edu" style="color: whitesmoke; text-decoration: none;"> About</a> </div><div class="ab">Project</div><div class="ab">Internship</div>
+    
+    <!-- <script type ="module"src="./scrollup.js"></script> -->
+    <div class="navbar"><div class="name">Rohit Balaji R</div> <div class="ab"> <a href="#edu" style="color: whitesmoke; text-decoration: none;"> About</a> </div><div class="ab"> <a href="#Proj" style="text-decoration: none; color: whitesmoke;"> Project </a></div>
+    <div class="ab"><a href="#inter" style="color: whitesmoke; text-decoration: none;"> Internship </a></div>
 <div class="ab" >Contact</div>
 
 <div class="but_out"> <button class="but"><a href="cv.pdf" download style="text-decoration: none; color: whitesmoke;"> Resume </a></button> </div>
@@ -30,10 +33,11 @@
 </div>
 <br>
 <br><br><br><br><br>
-
+<div id="edu"> About Me:</div>
+<br>
 <div class="container">
 
-<div class="newabout" id="edu">
+<div class="newabout">
     <div class="title">Educational Qualification</div>
     <p class="title1">Bannari Amman Institute of Technology</p>
     <ul>
@@ -106,10 +110,11 @@
     </div>
 
     <br>
+<br><br><br>
 <br>
 <div class="container">
     <div class="newabout">
-        <div class="title4"> Project</div>
+        <div class="title4" id="Proj"> Project</div>
         <p class="title6">Student Attendance App</p>
         <pre class="title5">
             Team Size : 3
@@ -121,16 +126,44 @@
         </pre>
     </div>
 </div>
+<br>
+<br><br><br>
+<br>
 <div class="container">
     <div class="newabout">
-        <div class="title4">Internship</div>
+        <div class="title4" id="inter">Internship</div>
         <p class="title6">Fipsar Solutions Private Limited , Chennai</p>
         <pre class="title5">
             Internship Training, 25-04-2022 to 13-05-2022
             15 days internship on AWS
-            I have done work on Amazon Cloud Services
+            I have gone through Training in Amazon Web Service
         </pre>
     </div>
 </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+<script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+
 </body>
 </html>
